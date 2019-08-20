@@ -12,4 +12,8 @@ import RxSwift
 protocol AccountRepositoryType {
     
     func signIn(data: SignInApiModel) -> Observable<TokenApiModel>
+    func getUsers(input: String) -> Observable<[UserDataModel]>
+    func getAccountData(userid: String) -> Observable<Wrapper>
+    func logOut(data: SignInApiModel)
+    func getMyAccount(userid: String) -> Observable<Wrapper>
 }

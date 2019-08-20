@@ -12,7 +12,7 @@ import STT
 
 class CellTableViewCell: SttTableViewCell<CellTableViewCellPresenter>, CellTableViewCellViewDelegate {
     
-    @IBOutlet var userImageView: UIImageView!
+    @IBOutlet weak var userImageView: CachedImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var contentLabel: UILabel!
     
@@ -22,19 +22,24 @@ class CellTableViewCell: SttTableViewCell<CellTableViewCellPresenter>, CellTable
     
 	override func awakeFromNib() {
         super.awakeFromNib()
+        
+        userImageView.createCircle()
+        userImageView.contentMode = .scaleAspectFill
+        userImageView.layer.masksToBounds = true
     }
-
+    
 	override func prepareBind() {
         super.prepareBind()
         
         set = SttBindingSet(parent: self)
         
-        set.bind(String.self).forProperty( {$0.nameLabel!.text = $1 }).to(presenter!.parent as! SttCommandType)
-        set.bind(String.self).forProperty( { $0.contentLabel!.text = $1 }).to(presenter!.parent as! SttCommandType)
-        set.bind(UIImage.self).forProperty( { $0.userImageView.image = $1 }).to(presenter!.parent as! SttCommandType)
+        set.bind(userImageView).to(presenter.userImage)
+        set.bind(nameLabel).to(presenter.userName)
+        set.bind(contentLabel).to(presenter.userRole)
+        set.bind(self.tap()).to(presenter.cellTap)
         
-        .apply()
+        set.apply()
     }
-
+    
     // MARK: - implementation of CellTableViewCellViewDelegate
 }

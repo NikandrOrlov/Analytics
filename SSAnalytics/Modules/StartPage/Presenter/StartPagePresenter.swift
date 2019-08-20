@@ -43,6 +43,7 @@ final class StartPagePresenter: SttPresenter<StartPageViewDelegate> {
     }
     
     private(set) lazy var validate = SttComandWithParametr(delegate: self, handler: { $0.onValidate(type: $1) })
+    
     private func onValidate(type: ValidationFieldType) {
         switch type {
         case .email:
@@ -55,11 +56,13 @@ final class StartPagePresenter: SttPresenter<StartPageViewDelegate> {
     }
     
     private(set) lazy var setData = SttCommand(delegate: self, handler: { $0.setFunc() })
+    
     private func setFunc() {
         _interactor.signIn(email: email.rawValue.value!, password: password.rawValue.value!)
             .useWork(setData)
             .subscribe(onNext: { _ in
                 print("Test")
+                 self._router.navigateWithId(storyboard: Storyboard.application, to: "start", typeNavigation: .modality)
             }).disposed(by: disposableBag)
     }
 }

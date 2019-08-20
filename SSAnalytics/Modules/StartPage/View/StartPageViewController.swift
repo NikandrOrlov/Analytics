@@ -64,7 +64,7 @@ class StartPageViewController: SttKeyboardViewController<StartPagePresenter>, St
         set.bind(passwordView.textField).forTarget(.didEndEditing)
             .to(presenter.validate).withCommandParametr(ValidationFieldType.password)
         
-        set.bind(loginButton).to(presenter.setData)
+        set.bind(loginButton.tap()).to(presenter.setData)
                 
         set.apply()
         

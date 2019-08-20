@@ -19,6 +19,7 @@ target 'SSAnalytics' do
     pod 'Cuckoo'
   end
 
+  pod 'SideMenu'
   pod 'STT'#, :path => '../../STT'
   pod 'AlamofireNetworkActivityLogger', '~> 2.3'
   pod 'SDWebImage', '~> 4.0'

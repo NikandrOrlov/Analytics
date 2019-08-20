@@ -10,5 +10,5 @@ import Foundation
 import RxSwift
 
 protocol TableViewInteractorType {
-    
+    func getUsers(input: String) -> Observable<[CellTableViewCellPresenter]>
 }

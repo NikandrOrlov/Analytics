@@ -32,7 +32,7 @@
 		507354882255FD1000998237 /* CellTableViewSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507354172255FD1000998237 /* CellTableViewSource.swift */; };
 		507354892255FD1000998237 /* CellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 507354182255FD1000998237 /* CellTableViewCell.xib */; };
 		5073548A2255FD1000998237 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5073541A2255FD1000998237 /* Assets.xcassets */; };
-		5073548B2255FD1000998237 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073541C2255FD1000998237 /* Extension.swift */; };
+		5073548B2255FD1000998237 /* StartPageViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073541C2255FD1000998237 /* StartPageViewControllerExtension.swift */; };
 		5073548C2255FD1000998237 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5073541F2255FD1000998237 /* Start.storyboard */; };
 		5073548D2255FD1000998237 /* StartPageModuleAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507354232255FD1000998237 /* StartPageModuleAssembler.swift */; };
 		5073548E2255FD1000998237 /* StartPagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507354252255FD1000998237 /* StartPagePresenter.swift */; };
@@ -91,14 +91,18 @@
 		507354C32255FD1100998237 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5073546D2255FD1000998237 /* LaunchScreen.storyboard */; };
 		507354C42255FD1100998237 /* AppDelegateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507354702255FD1000998237 /* AppDelegateExtensions.swift */; };
 		507354C52255FD1100998237 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507354712255FD1000998237 /* AppDelegate.swift */; };
-		52605E1163DEFE419D3FF8C2 /* Pods_SSAnalytics_SSAnalyticsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 779807B0E3D2D503F3DFFCAF /* Pods_SSAnalytics_SSAnalyticsTests.framework */; };
-		6C6C3190F1D5E8331028A272 /* Pods_SSAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED8297239D7CA178071780B /* Pods_SSAnalytics.framework */; };
-		B64D4D2722FDA57F0001FCB2 /* ValidationFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64D4D2622FDA57F0001FCB2 /* ValidationFieldType.swift */; };
-		B64D4D2922FDA5860001FCB2 /* ValidatorFieldData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64D4D2822FDA5860001FCB2 /* ValidatorFieldData.swift */; };
+		7417EB77D0E21E40C9F8819B /* Pods_SSAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4664D3400A38569C0A0941 /* Pods_SSAnalytics.framework */; };
+		B64C9AA3230AEF5600CB07D0 /* MyAccountViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64C9A9B230AEF5600CB07D0 /* MyAccountViewDelegate.swift */; };
+		B64C9AA4230AEF5600CB07D0 /* MyAccountModuleAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64C9A9C230AEF5600CB07D0 /* MyAccountModuleAssembler.swift */; };
+		B64C9AA5230AEF5600CB07D0 /* MyAccountRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64C9A9D230AEF5600CB07D0 /* MyAccountRouter.swift */; };
+		B64C9AA6230AEF5600CB07D0 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64C9A9E230AEF5600CB07D0 /* MyAccountViewController.swift */; };
+		B64C9AA7230AEF5600CB07D0 /* MyAccountInteractorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64C9A9F230AEF5600CB07D0 /* MyAccountInteractorType.swift */; };
+		B64C9AA8230AEF5600CB07D0 /* MyAccountRouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64C9AA0230AEF5600CB07D0 /* MyAccountRouterType.swift */; };
+		B64C9AA9230AEF5600CB07D0 /* MyAccountInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64C9AA1230AEF5600CB07D0 /* MyAccountInteractor.swift */; };
+		B64C9AAA230AEF5600CB07D0 /* MyAccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64C9AA2230AEF5600CB07D0 /* MyAccountPresenter.swift */; };
 		B64D4D2B22FDA6650001FCB2 /* ValidatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64D4D2A22FDA6650001FCB2 /* ValidatorType.swift */; };
 		B64D4D2D22FDA67C0001FCB2 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64D4D2C22FDA67C0001FCB2 /* Validator.swift */; };
 		B650B9DC2302B7EA00CB1C99 /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B650B9DB2302B7EA00CB1C99 /* UserDataModel.swift */; };
-		B650B9DE2302BBF400CB1C99 /* UsersWayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B650B9DD2302BBF400CB1C99 /* UsersWayModel.swift */; };
 		B650B9F82302ED7E00CB1C99 /* TableViewViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B650B9F02302ED7E00CB1C99 /* TableViewViewDelegate.swift */; };
 		B650B9F92302ED7E00CB1C99 /* TableViewModuleAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B650B9F12302ED7E00CB1C99 /* TableViewModuleAssembler.swift */; };
 		B650B9FB2302ED7E00CB1C99 /* TableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B650B9F32302ED7E00CB1C99 /* TableViewViewController.swift */; };
@@ -107,8 +111,30 @@
 		B650B9FF2302ED7E00CB1C99 /* TableViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B650B9F72302ED7E00CB1C99 /* TableViewPresenter.swift */; };
 		B650BA0F2302F28400CB1C99 /* TableViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B650BA072302F28400CB1C99 /* TableViewRouter.swift */; };
 		B650BA122302F28400CB1C99 /* TableViewRouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B650BA0A2302F28400CB1C99 /* TableViewRouterType.swift */; };
+		B650BA17230313B600CB1C99 /* ValidatorFieldData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B650BA15230313B600CB1C99 /* ValidatorFieldData.swift */; };
+		B650BA18230313B600CB1C99 /* ValidationFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B650BA16230313B600CB1C99 /* ValidationFieldType.swift */; };
 		B653C3F522F9A607002A8A75 /* UITextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = B653C3F422F9A607002A8A75 /* UITextFields.swift */; };
+		B65574B72306CFED00803BCA /* ListBastardViewViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65574AF2306CFED00803BCA /* ListBastardViewViewDelegate.swift */; };
+		B65574B82306CFED00803BCA /* ListBastardViewModuleAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65574B02306CFED00803BCA /* ListBastardViewModuleAssembler.swift */; };
+		B65574B92306CFED00803BCA /* ListBastardViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65574B12306CFED00803BCA /* ListBastardViewRouter.swift */; };
+		B65574BA2306CFED00803BCA /* ListBastardViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65574B22306CFED00803BCA /* ListBastardViewViewController.swift */; };
+		B65574BB2306CFED00803BCA /* ListBastardViewInteractorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65574B32306CFED00803BCA /* ListBastardViewInteractorType.swift */; };
+		B65574BC2306CFED00803BCA /* ListBastardViewRouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65574B42306CFED00803BCA /* ListBastardViewRouterType.swift */; };
+		B65574BD2306CFED00803BCA /* ListBastardViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65574B52306CFED00803BCA /* ListBastardViewInteractor.swift */; };
+		B65574BE2306CFED00803BCA /* ListBastardViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65574B62306CFED00803BCA /* ListBastardViewPresenter.swift */; };
+		B65574C52306D3FB00803BCA /* SideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65574C42306D3FB00803BCA /* SideMenuNavigationController.swift */; };
 		B65741E62301C51600C701D7 /* Application.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65741E52301C51600C701D7 /* Application.storyboard */; };
+		B694CCDD2305460B005CE0F7 /* AccountPageViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B694CCD52305460B005CE0F7 /* AccountPageViewDelegate.swift */; };
+		B694CCDE2305460B005CE0F7 /* AccountPageModuleAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B694CCD62305460B005CE0F7 /* AccountPageModuleAssembler.swift */; };
+		B694CCDF2305460B005CE0F7 /* AccountPageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B694CCD72305460B005CE0F7 /* AccountPageRouter.swift */; };
+		B694CCE02305460B005CE0F7 /* AccountPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B694CCD82305460B005CE0F7 /* AccountPageViewController.swift */; };
+		B694CCE12305460B005CE0F7 /* AccountPageInteractorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B694CCD92305460B005CE0F7 /* AccountPageInteractorType.swift */; };
+		B694CCE22305460B005CE0F7 /* AccountPageRouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B694CCDA2305460B005CE0F7 /* AccountPageRouterType.swift */; };
+		B694CCE32305460B005CE0F7 /* AccountPageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B694CCDB2305460B005CE0F7 /* AccountPageInteractor.swift */; };
+		B694CCE42305460B005CE0F7 /* AccountPagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B694CCDC2305460B005CE0F7 /* AccountPagePresenter.swift */; };
+		B6CC17C923040AC000E17A94 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CC17C723040AC000E17A94 /* Image.swift */; };
+		B6CC17CA23040AC100E17A94 /* CachedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CC17C823040AC000E17A94 /* CachedImageView.swift */; };
+		CB12D281292E4A594C9B5516 /* Pods_SSAnalytics_SSAnalyticsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA656DFCD96CBAB79381B0A9 /* Pods_SSAnalytics_SSAnalyticsTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,11 +148,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		147DF5795EFCB45B30ACE70C /* Pods-SSAnalytics-SSAnalyticsTests.debug uat.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSAnalytics-SSAnalyticsTests.debug uat.xcconfig"; path = "Target Support Files/Pods-SSAnalytics-SSAnalyticsTests/Pods-SSAnalytics-SSAnalyticsTests.debug uat.xcconfig"; sourceTree = "<group>"; };
-		32559E3257F9E67C147B5881 /* Pods-SSAnalytics-SSAnalyticsTests.release uat.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSAnalytics-SSAnalyticsTests.release uat.xcconfig"; path = "Target Support Files/Pods-SSAnalytics-SSAnalyticsTests/Pods-SSAnalytics-SSAnalyticsTests.release uat.xcconfig"; sourceTree = "<group>"; };
-		35613103FC2E83E3DE9D9A9B /* Pods-SSAnalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSAnalytics.debug.xcconfig"; path = "Target Support Files/Pods-SSAnalytics/Pods-SSAnalytics.debug.xcconfig"; sourceTree = "<group>"; };
-		35D6700BEED904763348C3E0 /* Pods-SSAnalytics-SSAnalyticsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSAnalytics-SSAnalyticsTests.release.xcconfig"; path = "Target Support Files/Pods-SSAnalytics-SSAnalyticsTests/Pods-SSAnalytics-SSAnalyticsTests.release.xcconfig"; sourceTree = "<group>"; };
-		43E1A728BF71DCCEC409CAD8 /* Pods-SSAnalytics.release uat.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSAnalytics.release uat.xcconfig"; path = "Target Support Files/Pods-SSAnalytics/Pods-SSAnalytics.release uat.xcconfig"; sourceTree = "<group>"; };
+		0348EFA5448D0554CE997C14 /* Pods-SSAnalytics-SSAnalyticsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSAnalytics-SSAnalyticsTests.debug.xcconfig"; path = "Target Support Files/Pods-SSAnalytics-SSAnalyticsTests/Pods-SSAnalytics-SSAnalyticsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		05E111FC241401760725CE89 /* Pods-SSAnalytics.release uat.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSAnalytics.release uat.xcconfig"; path = "Target Support Files/Pods-SSAnalytics/Pods-SSAnalytics.release uat.xcconfig"; sourceTree = "<group>"; };
+		417E45497DF276E3103ADC5F /* Pods-SSAnalytics-SSAnalyticsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSAnalytics-SSAnalyticsTests.release.xcconfig"; path = "Target Support Files/Pods-SSAnalytics-SSAnalyticsTests/Pods-SSAnalytics-SSAnalyticsTests.release.xcconfig"; sourceTree = "<group>"; };
 		507353CC2255FC7D00998237 /* SSAnalytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSAnalytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		507353DB2255FC7D00998237 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		507353E02255FC7D00998237 /* SSAnalyticsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSAnalyticsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,7 +180,7 @@
 		507354172255FD1000998237 /* CellTableViewSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellTableViewSource.swift; sourceTree = "<group>"; };
 		507354182255FD1000998237 /* CellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellTableViewCell.xib; sourceTree = "<group>"; };
 		5073541A2255FD1000998237 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5073541C2255FD1000998237 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		5073541C2255FD1000998237 /* StartPageViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartPageViewControllerExtension.swift; sourceTree = "<group>"; };
 		507354202255FD1000998237 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Start.storyboard; sourceTree = "<group>"; };
 		507354232255FD1000998237 /* StartPageModuleAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartPageModuleAssembler.swift; sourceTree = "<group>"; };
 		507354252255FD1000998237 /* StartPagePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartPagePresenter.swift; sourceTree = "<group>"; };
@@ -215,15 +239,20 @@
 		5073546E2255FD1000998237 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		507354702255FD1000998237 /* AppDelegateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateExtensions.swift; sourceTree = "<group>"; };
 		507354712255FD1000998237 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		779807B0E3D2D503F3DFFCAF /* Pods_SSAnalytics_SSAnalyticsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSAnalytics_SSAnalyticsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		825B874B32B9E634203C9F4A /* Pods-SSAnalytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSAnalytics.release.xcconfig"; path = "Target Support Files/Pods-SSAnalytics/Pods-SSAnalytics.release.xcconfig"; sourceTree = "<group>"; };
-		95A5DB101EE7D3E242F75121 /* Pods-SSAnalytics.debug uat.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSAnalytics.debug uat.xcconfig"; path = "Target Support Files/Pods-SSAnalytics/Pods-SSAnalytics.debug uat.xcconfig"; sourceTree = "<group>"; };
-		B64D4D2622FDA57F0001FCB2 /* ValidationFieldType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ValidationFieldType.swift; path = ../../../../../../Downloads/ValidationFieldType.swift; sourceTree = "<group>"; };
-		B64D4D2822FDA5860001FCB2 /* ValidatorFieldData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ValidatorFieldData.swift; path = ../../../../../../Downloads/ValidatorFieldData.swift; sourceTree = "<group>"; };
+		8CF66E01B349A2152E088B15 /* Pods-SSAnalytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSAnalytics.release.xcconfig"; path = "Target Support Files/Pods-SSAnalytics/Pods-SSAnalytics.release.xcconfig"; sourceTree = "<group>"; };
+		9C4664D3400A38569C0A0941 /* Pods_SSAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA656DFCD96CBAB79381B0A9 /* Pods_SSAnalytics_SSAnalyticsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSAnalytics_SSAnalyticsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B64C9A9B230AEF5600CB07D0 /* MyAccountViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewDelegate.swift; sourceTree = "<group>"; };
+		B64C9A9C230AEF5600CB07D0 /* MyAccountModuleAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountModuleAssembler.swift; sourceTree = "<group>"; };
+		B64C9A9D230AEF5600CB07D0 /* MyAccountRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountRouter.swift; sourceTree = "<group>"; };
+		B64C9A9E230AEF5600CB07D0 /* MyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
+		B64C9A9F230AEF5600CB07D0 /* MyAccountInteractorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountInteractorType.swift; sourceTree = "<group>"; };
+		B64C9AA0230AEF5600CB07D0 /* MyAccountRouterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountRouterType.swift; sourceTree = "<group>"; };
+		B64C9AA1230AEF5600CB07D0 /* MyAccountInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountInteractor.swift; sourceTree = "<group>"; };
+		B64C9AA2230AEF5600CB07D0 /* MyAccountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountPresenter.swift; sourceTree = "<group>"; };
 		B64D4D2A22FDA6650001FCB2 /* ValidatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorType.swift; sourceTree = "<group>"; };
 		B64D4D2C22FDA67C0001FCB2 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		B650B9DB2302B7EA00CB1C99 /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
-		B650B9DD2302BBF400CB1C99 /* UsersWayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersWayModel.swift; sourceTree = "<group>"; };
 		B650B9F02302ED7E00CB1C99 /* TableViewViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewViewDelegate.swift; sourceTree = "<group>"; };
 		B650B9F12302ED7E00CB1C99 /* TableViewModuleAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModuleAssembler.swift; sourceTree = "<group>"; };
 		B650B9F32302ED7E00CB1C99 /* TableViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewViewController.swift; sourceTree = "<group>"; };
@@ -232,10 +261,33 @@
 		B650B9F72302ED7E00CB1C99 /* TableViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewPresenter.swift; sourceTree = "<group>"; };
 		B650BA072302F28400CB1C99 /* TableViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewRouter.swift; sourceTree = "<group>"; };
 		B650BA0A2302F28400CB1C99 /* TableViewRouterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewRouterType.swift; sourceTree = "<group>"; };
+		B650BA15230313B600CB1C99 /* ValidatorFieldData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorFieldData.swift; sourceTree = "<group>"; };
+		B650BA16230313B600CB1C99 /* ValidationFieldType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationFieldType.swift; sourceTree = "<group>"; };
 		B653C3F422F9A607002A8A75 /* UITextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFields.swift; sourceTree = "<group>"; };
+		B65574AF2306CFED00803BCA /* ListBastardViewViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBastardViewViewDelegate.swift; sourceTree = "<group>"; };
+		B65574B02306CFED00803BCA /* ListBastardViewModuleAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBastardViewModuleAssembler.swift; sourceTree = "<group>"; };
+		B65574B12306CFED00803BCA /* ListBastardViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBastardViewRouter.swift; sourceTree = "<group>"; };
+		B65574B22306CFED00803BCA /* ListBastardViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBastardViewViewController.swift; sourceTree = "<group>"; };
+		B65574B32306CFED00803BCA /* ListBastardViewInteractorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBastardViewInteractorType.swift; sourceTree = "<group>"; };
+		B65574B42306CFED00803BCA /* ListBastardViewRouterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBastardViewRouterType.swift; sourceTree = "<group>"; };
+		B65574B52306CFED00803BCA /* ListBastardViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBastardViewInteractor.swift; sourceTree = "<group>"; };
+		B65574B62306CFED00803BCA /* ListBastardViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBastardViewPresenter.swift; sourceTree = "<group>"; };
+		B65574C42306D3FB00803BCA /* SideMenuNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuNavigationController.swift; sourceTree = "<group>"; };
 		B65741E52301C51600C701D7 /* Application.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Application.storyboard; sourceTree = "<group>"; };
-		D9E9059AD76E7248C78862F3 /* Pods-SSAnalytics-SSAnalyticsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSAnalytics-SSAnalyticsTests.debug.xcconfig"; path = "Target Support Files/Pods-SSAnalytics-SSAnalyticsTests/Pods-SSAnalytics-SSAnalyticsTests.debug.xcconfig"; sourceTree = "<group>"; };
-		DED8297239D7CA178071780B /* Pods_SSAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B694CCD52305460B005CE0F7 /* AccountPageViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPageViewDelegate.swift; sourceTree = "<group>"; };
+		B694CCD62305460B005CE0F7 /* AccountPageModuleAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPageModuleAssembler.swift; sourceTree = "<group>"; };
+		B694CCD72305460B005CE0F7 /* AccountPageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPageRouter.swift; sourceTree = "<group>"; };
+		B694CCD82305460B005CE0F7 /* AccountPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPageViewController.swift; sourceTree = "<group>"; };
+		B694CCD92305460B005CE0F7 /* AccountPageInteractorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPageInteractorType.swift; sourceTree = "<group>"; };
+		B694CCDA2305460B005CE0F7 /* AccountPageRouterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPageRouterType.swift; sourceTree = "<group>"; };
+		B694CCDB2305460B005CE0F7 /* AccountPageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPageInteractor.swift; sourceTree = "<group>"; };
+		B694CCDC2305460B005CE0F7 /* AccountPagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPagePresenter.swift; sourceTree = "<group>"; };
+		B6CC17C723040AC000E17A94 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		B6CC17C823040AC000E17A94 /* CachedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CachedImageView.swift; sourceTree = "<group>"; };
+		E5030F5E4E674137FAF8DF12 /* Pods-SSAnalytics-SSAnalyticsTests.debug uat.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSAnalytics-SSAnalyticsTests.debug uat.xcconfig"; path = "Target Support Files/Pods-SSAnalytics-SSAnalyticsTests/Pods-SSAnalytics-SSAnalyticsTests.debug uat.xcconfig"; sourceTree = "<group>"; };
+		E55D10DD5F4F003E3B6F3DA2 /* Pods-SSAnalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSAnalytics.debug.xcconfig"; path = "Target Support Files/Pods-SSAnalytics/Pods-SSAnalytics.debug.xcconfig"; sourceTree = "<group>"; };
+		EE50221F20872FB50D6464EB /* Pods-SSAnalytics-SSAnalyticsTests.release uat.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSAnalytics-SSAnalyticsTests.release uat.xcconfig"; path = "Target Support Files/Pods-SSAnalytics-SSAnalyticsTests/Pods-SSAnalytics-SSAnalyticsTests.release uat.xcconfig"; sourceTree = "<group>"; };
+		F8E6FFA69D70E0C4BB629E34 /* Pods-SSAnalytics.debug uat.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSAnalytics.debug uat.xcconfig"; path = "Target Support Files/Pods-SSAnalytics/Pods-SSAnalytics.debug uat.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,7 +295,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C6C3190F1D5E8331028A272 /* Pods_SSAnalytics.framework in Frameworks */,
+				7417EB77D0E21E40C9F8819B /* Pods_SSAnalytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,33 +303,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52605E1163DEFE419D3FF8C2 /* Pods_SSAnalytics_SSAnalyticsTests.framework in Frameworks */,
+				CB12D281292E4A594C9B5516 /* Pods_SSAnalytics_SSAnalyticsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		15172E501A26156B1D457CC8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DED8297239D7CA178071780B /* Pods_SSAnalytics.framework */,
-				779807B0E3D2D503F3DFFCAF /* Pods_SSAnalytics_SSAnalyticsTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		369A1090AF691ACE252F15B1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				35613103FC2E83E3DE9D9A9B /* Pods-SSAnalytics.debug.xcconfig */,
-				825B874B32B9E634203C9F4A /* Pods-SSAnalytics.release.xcconfig */,
-				D9E9059AD76E7248C78862F3 /* Pods-SSAnalytics-SSAnalyticsTests.debug.xcconfig */,
-				35D6700BEED904763348C3E0 /* Pods-SSAnalytics-SSAnalyticsTests.release.xcconfig */,
-				95A5DB101EE7D3E242F75121 /* Pods-SSAnalytics.debug uat.xcconfig */,
-				43E1A728BF71DCCEC409CAD8 /* Pods-SSAnalytics.release uat.xcconfig */,
-				147DF5795EFCB45B30ACE70C /* Pods-SSAnalytics-SSAnalyticsTests.debug uat.xcconfig */,
-				32559E3257F9E67C147B5881 /* Pods-SSAnalytics-SSAnalyticsTests.release uat.xcconfig */,
+				E55D10DD5F4F003E3B6F3DA2 /* Pods-SSAnalytics.debug.xcconfig */,
+				F8E6FFA69D70E0C4BB629E34 /* Pods-SSAnalytics.debug uat.xcconfig */,
+				8CF66E01B349A2152E088B15 /* Pods-SSAnalytics.release.xcconfig */,
+				05E111FC241401760725CE89 /* Pods-SSAnalytics.release uat.xcconfig */,
+				0348EFA5448D0554CE997C14 /* Pods-SSAnalytics-SSAnalyticsTests.debug.xcconfig */,
+				E5030F5E4E674137FAF8DF12 /* Pods-SSAnalytics-SSAnalyticsTests.debug uat.xcconfig */,
+				417E45497DF276E3103ADC5F /* Pods-SSAnalytics-SSAnalyticsTests.release.xcconfig */,
+				EE50221F20872FB50D6464EB /* Pods-SSAnalytics-SSAnalyticsTests.release uat.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -289,7 +332,7 @@
 				507353E32255FC7D00998237 /* SSAnalyticsTests */,
 				507353CD2255FC7D00998237 /* Products */,
 				369A1090AF691ACE252F15B1 /* Pods */,
-				15172E501A26156B1D457CC8 /* Frameworks */,
+				7C868BA82BF4322DBF4DD145 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -335,6 +378,7 @@
 				507353FC2255FD1000998237 /* Repositories */,
 				507354022255FD1000998237 /* Models */,
 				5073540A2255FD1000998237 /* Mappers */,
+				B6CC17C623040AAD00E17A94 /* Helpers */,
 				5073540C2255FD1000998237 /* Router */,
 			);
 			path = Infrastructure;
@@ -426,7 +470,6 @@
 			isa = PBXGroup;
 			children = (
 				507354052255FD1000998237 /* TokenApiModel.swift */,
-				B650B9DD2302BBF400CB1C99 /* UsersWayModel.swift */,
 				B650B9DB2302B7EA00CB1C99 /* UserDataModel.swift */,
 			);
 			path = Response;
@@ -468,18 +511,18 @@
 		5073540F2255FD1000998237 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				507354102255FD1000998237 /* Cell */,
+				507354102255FD1000998237 /* TableViewCell */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		507354102255FD1000998237 /* Cell */ = {
+		507354102255FD1000998237 /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				507354112255FD1000998237 /* Core */,
 				507354142255FD1000998237 /* View */,
 			);
-			path = Cell;
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		507354112255FD1000998237 /* Core */ = {
@@ -505,7 +548,7 @@
 		5073541B2255FD1000998237 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				5073541C2255FD1000998237 /* Extension.swift */,
+				5073541C2255FD1000998237 /* StartPageViewControllerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -516,6 +559,9 @@
 				5073541E2255FD1000998237 /* Storyboards */,
 				507354212255FD1000998237 /* StartPage */,
 				B650B9EF2302ED4C00CB1C99 /* TableView */,
+				B694CCD4230545A6005CE0F7 /* AccountPage */,
+				B65574AE2306CEE000803BCA /* ListBastardView */,
+				B64C9A9A230AEF1900CB07D0 /* MyAccount */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -768,6 +814,70 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
+		7C868BA82BF4322DBF4DD145 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C4664D3400A38569C0A0941 /* Pods_SSAnalytics.framework */,
+				AA656DFCD96CBAB79381B0A9 /* Pods_SSAnalytics_SSAnalyticsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B64C9A9A230AEF1900CB07D0 /* MyAccount */ = {
+			isa = PBXGroup;
+			children = (
+				B64C9AAB230AEF6300CB07D0 /* Assembler */,
+				B64C9AAC230AEF6D00CB07D0 /* Presenter */,
+				B64C9AAD230AEF7400CB07D0 /* View */,
+				B64C9AAE230AEF7A00CB07D0 /* Interactor */,
+				B64C9AAF230AEF8000CB07D0 /* Router */,
+			);
+			path = MyAccount;
+			sourceTree = "<group>";
+		};
+		B64C9AAB230AEF6300CB07D0 /* Assembler */ = {
+			isa = PBXGroup;
+			children = (
+				B64C9A9C230AEF5600CB07D0 /* MyAccountModuleAssembler.swift */,
+			);
+			path = Assembler;
+			sourceTree = "<group>";
+		};
+		B64C9AAC230AEF6D00CB07D0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B64C9AA2230AEF5600CB07D0 /* MyAccountPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B64C9AAD230AEF7400CB07D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B64C9A9E230AEF5600CB07D0 /* MyAccountViewController.swift */,
+				B64C9A9B230AEF5600CB07D0 /* MyAccountViewDelegate.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B64C9AAE230AEF7A00CB07D0 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B64C9AA1230AEF5600CB07D0 /* MyAccountInteractor.swift */,
+				B64C9A9F230AEF5600CB07D0 /* MyAccountInteractorType.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B64C9AAF230AEF8000CB07D0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B64C9A9D230AEF5600CB07D0 /* MyAccountRouter.swift */,
+				B64C9AA0230AEF5600CB07D0 /* MyAccountRouterType.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		B64D4D1F22FDA0CC0001FCB2 /* Factories */ = {
 			isa = PBXGroup;
 			children = (
@@ -780,7 +890,8 @@
 		B64D4D2022FDA0D60001FCB2 /* Abstract */ = {
 			isa = PBXGroup;
 			children = (
-				B64D4D2622FDA57F0001FCB2 /* ValidationFieldType.swift */,
+				B650BA16230313B600CB1C99 /* ValidationFieldType.swift */,
+				B650BA15230313B600CB1C99 /* ValidatorFieldData.swift */,
 				B64D4D2A22FDA6650001FCB2 /* ValidatorType.swift */,
 			);
 			path = Abstract;
@@ -789,7 +900,6 @@
 		B64D4D2122FDA0EB0001FCB2 /* Implementation */ = {
 			isa = PBXGroup;
 			children = (
-				B64D4D2822FDA5860001FCB2 /* ValidatorFieldData.swift */,
 				B64D4D2C22FDA67C0001FCB2 /* Validator.swift */,
 			);
 			path = Implementation;
@@ -850,6 +960,126 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		B65574AE2306CEE000803BCA /* ListBastardView */ = {
+			isa = PBXGroup;
+			children = (
+				B65574BF2306CFF100803BCA /* Assembler */,
+				B65574C02306CFFF00803BCA /* Presenter */,
+				B65574C12306D00500803BCA /* View */,
+				B65574C22306D00C00803BCA /* Interacor */,
+				B65574C32306D01E00803BCA /* Router */,
+			);
+			path = ListBastardView;
+			sourceTree = "<group>";
+		};
+		B65574BF2306CFF100803BCA /* Assembler */ = {
+			isa = PBXGroup;
+			children = (
+				B65574B02306CFED00803BCA /* ListBastardViewModuleAssembler.swift */,
+			);
+			path = Assembler;
+			sourceTree = "<group>";
+		};
+		B65574C02306CFFF00803BCA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B65574B62306CFED00803BCA /* ListBastardViewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B65574C12306D00500803BCA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B65574C42306D3FB00803BCA /* SideMenuNavigationController.swift */,
+				B65574B22306CFED00803BCA /* ListBastardViewViewController.swift */,
+				B65574AF2306CFED00803BCA /* ListBastardViewViewDelegate.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B65574C22306D00C00803BCA /* Interacor */ = {
+			isa = PBXGroup;
+			children = (
+				B65574B52306CFED00803BCA /* ListBastardViewInteractor.swift */,
+				B65574B32306CFED00803BCA /* ListBastardViewInteractorType.swift */,
+			);
+			path = Interacor;
+			sourceTree = "<group>";
+		};
+		B65574C32306D01E00803BCA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B65574B12306CFED00803BCA /* ListBastardViewRouter.swift */,
+				B65574B42306CFED00803BCA /* ListBastardViewRouterType.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B694CCD4230545A6005CE0F7 /* AccountPage */ = {
+			isa = PBXGroup;
+			children = (
+				B694CCE523054622005CE0F7 /* Assembler */,
+				B694CCE623054631005CE0F7 /* Presenter */,
+				B694CCE72305463D005CE0F7 /* View */,
+				B694CCE823054D13005CE0F7 /* Interactor */,
+				B694CCE923054D2B005CE0F7 /* Router */,
+			);
+			path = AccountPage;
+			sourceTree = "<group>";
+		};
+		B694CCE523054622005CE0F7 /* Assembler */ = {
+			isa = PBXGroup;
+			children = (
+				B694CCD62305460B005CE0F7 /* AccountPageModuleAssembler.swift */,
+			);
+			path = Assembler;
+			sourceTree = "<group>";
+		};
+		B694CCE623054631005CE0F7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B694CCDC2305460B005CE0F7 /* AccountPagePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B694CCE72305463D005CE0F7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B694CCD82305460B005CE0F7 /* AccountPageViewController.swift */,
+				B694CCD52305460B005CE0F7 /* AccountPageViewDelegate.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B694CCE823054D13005CE0F7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B694CCDB2305460B005CE0F7 /* AccountPageInteractor.swift */,
+				B694CCD92305460B005CE0F7 /* AccountPageInteractorType.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B694CCE923054D2B005CE0F7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B694CCD72305460B005CE0F7 /* AccountPageRouter.swift */,
+				B694CCDA2305460B005CE0F7 /* AccountPageRouterType.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B6CC17C623040AAD00E17A94 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B6CC17C823040AC000E17A94 /* CachedImageView.swift */,
+				B6CC17C723040AC000E17A94 /* Image.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -857,11 +1087,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 507353E92255FC7D00998237 /* Build configuration list for PBXNativeTarget "SSAnalytics" */;
 			buildPhases = (
-				D2F6BF7A8BC2C69603C6FBB1 /* [CP] Check Pods Manifest.lock */,
+				E2421491948349799551E208 /* [CP] Check Pods Manifest.lock */,
 				507353C82255FC7D00998237 /* Sources */,
 				507353C92255FC7D00998237 /* Frameworks */,
 				507353CA2255FC7D00998237 /* Resources */,
-				F8E6134E9CC7F3DC1FCE25BE /* [CP] Embed Pods Frameworks */,
+				9F6E88D0BFB45FC8BFFC6918 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -876,11 +1106,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 507353EC2255FC7D00998237 /* Build configuration list for PBXNativeTarget "SSAnalyticsTests" */;
 			buildPhases = (
-				BF978D29556AB846130D4642 /* [CP] Check Pods Manifest.lock */,
+				065146C6B756B7509F676F17 /* [CP] Check Pods Manifest.lock */,
 				507353DC2255FC7D00998237 /* Sources */,
 				507353DD2255FC7D00998237 /* Frameworks */,
 				507353DE2255FC7D00998237 /* Resources */,
-				AE57B02BBF5AB3DBD16477FA /* [CP] Embed Pods Frameworks */,
+				8A4FF9605FC8245D93BD94F0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -959,24 +1189,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		AE57B02BBF5AB3DBD16477FA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SSAnalytics-SSAnalyticsTests/Pods-SSAnalytics-SSAnalyticsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SSAnalytics-SSAnalyticsTests/Pods-SSAnalytics-SSAnalyticsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SSAnalytics-SSAnalyticsTests/Pods-SSAnalytics-SSAnalyticsTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BF978D29556AB846130D4642 /* [CP] Check Pods Manifest.lock */ = {
+		065146C6B756B7509F676F17 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -998,7 +1211,41 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D2F6BF7A8BC2C69603C6FBB1 /* [CP] Check Pods Manifest.lock */ = {
+		8A4FF9605FC8245D93BD94F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SSAnalytics-SSAnalyticsTests/Pods-SSAnalytics-SSAnalyticsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SSAnalytics-SSAnalyticsTests/Pods-SSAnalytics-SSAnalyticsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SSAnalytics-SSAnalyticsTests/Pods-SSAnalytics-SSAnalyticsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F6E88D0BFB45FC8BFFC6918 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SSAnalytics/Pods-SSAnalytics-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SSAnalytics/Pods-SSAnalytics-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SSAnalytics/Pods-SSAnalytics-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2421491948349799551E208 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1020,23 +1267,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F8E6134E9CC7F3DC1FCE25BE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SSAnalytics/Pods-SSAnalytics-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SSAnalytics/Pods-SSAnalytics-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SSAnalytics/Pods-SSAnalytics-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1044,25 +1274,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B65574BE2306CFED00803BCA /* ListBastardViewPresenter.swift in Sources */,
 				B650B9FC2302ED7E00CB1C99 /* TableViewInteractorType.swift in Sources */,
 				5073549A2255FD1000998237 /* UIButtons.swift in Sources */,
 				5073548D2255FD1000998237 /* StartPageModuleAssembler.swift in Sources */,
-				B650B9DE2302BBF400CB1C99 /* UsersWayModel.swift in Sources */,
-				5073548B2255FD1000998237 /* Extension.swift in Sources */,
+				5073548B2255FD1000998237 /* StartPageViewControllerExtension.swift in Sources */,
+				B694CCDD2305460B005CE0F7 /* AccountPageViewDelegate.swift in Sources */,
 				5073549E2255FD1000998237 /* FontAppearanceDecoratorType.swift in Sources */,
 				5073549C2255FD1000998237 /* FontRelativeSize.swift in Sources */,
 				507354942255FD1000998237 /* UITextViews.swift in Sources */,
+				B65574BC2306CFED00803BCA /* ListBastardViewRouterType.swift in Sources */,
 				507354902255FD1000998237 /* StartPageViewDelegate.swift in Sources */,
 				507354A82255FD1000998237 /* TextFieldAppearanceType.swift in Sources */,
 				507354B62255FD1100998237 /* BaseAppearance.swift in Sources */,
 				507354B12255FD1100998237 /* LightSearchBarAppearance.swift in Sources */,
 				507354742255FD1000998237 /* PlistKey.swift in Sources */,
-				B64D4D2922FDA5860001FCB2 /* ValidatorFieldData.swift in Sources */,
+				B650BA18230313B600CB1C99 /* ValidationFieldType.swift in Sources */,
 				507354812255FD1000998237 /* AccountMappers.swift in Sources */,
 				507354772255FD1000998237 /* ApiDataProviderType.swift in Sources */,
 				507354AE2255FD1000998237 /* LightLabelAppearance.swift in Sources */,
 				507354B42255FD1100998237 /* LightButtonAppearance.swift in Sources */,
 				507354912255FD1000998237 /* StartPageInteractor.swift in Sources */,
+				B694CCE02305460B005CE0F7 /* AccountPageViewController.swift in Sources */,
+				B64C9AA9230AEF5600CB07D0 /* MyAccountInteractor.swift in Sources */,
 				507354AB2255FD1000998237 /* LightColorAppearanceDecorator.swift in Sources */,
 				507354C22255FD1100998237 /* ApplicationAssembly.swift in Sources */,
 				507354962255FD1000998237 /* UISliders.swift in Sources */,
@@ -1072,10 +1306,12 @@
 				507354A72255FD1000998237 /* ButtonAppearanceType.swift in Sources */,
 				507354932255FD1000998237 /* UIViews.swift in Sources */,
 				B650B9F92302ED7E00CB1C99 /* TableViewModuleAssembler.swift in Sources */,
+				B65574BB2306CFED00803BCA /* ListBastardViewInteractorType.swift in Sources */,
 				507354752255FD1000998237 /* Storyboard.swift in Sources */,
 				B650BA0F2302F28400CB1C99 /* TableViewRouter.swift in Sources */,
 				507354972255FD1000998237 /* UINavigationBars.swift in Sources */,
 				507354C42255FD1100998237 /* AppDelegateExtensions.swift in Sources */,
+				B6CC17C923040AC000E17A94 /* Image.swift in Sources */,
 				507354AC2255FD1000998237 /* LightFontAppearanceDecorator.swift in Sources */,
 				507354B82255FD1100998237 /* LightAppearanceFactory.swift in Sources */,
 				507354852255FD1000998237 /* CellTableViewCellDelegate.swift in Sources */,
@@ -1089,14 +1325,21 @@
 				B64D4D2D22FDA67C0001FCB2 /* Validator.swift in Sources */,
 				507354992255FD1000998237 /* UILabels.swift in Sources */,
 				507354A62255FD1000998237 /* SliderAppearanceType.swift in Sources */,
+				B694CCDE2305460B005CE0F7 /* AccountPageModuleAssembler.swift in Sources */,
 				5073547F2255FD1000998237 /* BaseResult.swift in Sources */,
 				507354982255FD1000998237 /* UITableViews.swift in Sources */,
+				B64C9AAA230AEF5600CB07D0 /* MyAccountPresenter.swift in Sources */,
 				507354822255FD1000998237 /* SttRouter.swift in Sources */,
+				B694CCE32305460B005CE0F7 /* AccountPageInteractor.swift in Sources */,
 				507354BD2255FD1100998237 /* Converter.swift in Sources */,
 				507354B92255FD1100998237 /* AppereanceManager.swift in Sources */,
 				507354B32255FD1100998237 /* LightComponentsAppearance.swift in Sources */,
+				B64C9AA8230AEF5600CB07D0 /* MyAccountRouterType.swift in Sources */,
+				B6CC17CA23040AC100E17A94 /* CachedImageView.swift in Sources */,
+				B65574B72306CFED00803BCA /* ListBastardViewViewDelegate.swift in Sources */,
 				507354B02255FD1000998237 /* LightTextFieldAppearance.swift in Sources */,
 				B650B9FE2302ED7E00CB1C99 /* TableViewInteractor.swift in Sources */,
+				B65574BD2306CFED00803BCA /* ListBastardViewInteractor.swift in Sources */,
 				B650B9FF2302ED7E00CB1C99 /* TableViewPresenter.swift in Sources */,
 				507354782255FD1000998237 /* KeyValueStorageType.swift in Sources */,
 				507354732255FD1000998237 /* Constants.swift in Sources */,
@@ -1104,13 +1347,19 @@
 				507354B52255FD1100998237 /* BaseFontDecorator.swift in Sources */,
 				507354762255FD1000998237 /* ApiConroller.swift in Sources */,
 				507354842255FD1000998237 /* CellTableViewCellPresenter.swift in Sources */,
+				B65574BA2306CFED00803BCA /* ListBastardViewViewController.swift in Sources */,
+				B65574C52306D3FB00803BCA /* SideMenuNavigationController.swift in Sources */,
 				507354A22255FD1000998237 /* LabelAppearanceType.swift in Sources */,
 				B64D4D2B22FDA6650001FCB2 /* ValidatorType.swift in Sources */,
 				507354A92255FD1000998237 /* LightNavigationBarAppearance.swift in Sources */,
+				B694CCE22305460B005CE0F7 /* AccountPageRouterType.swift in Sources */,
+				B64C9AA3230AEF5600CB07D0 /* MyAccountViewDelegate.swift in Sources */,
 				507354802255FD1000998237 /* SignInApiModel.swift in Sources */,
 				B653C3F522F9A607002A8A75 /* UITextFields.swift in Sources */,
 				507354792255FD1000998237 /* KeyValueStorage.swift in Sources */,
+				B64C9AA4230AEF5600CB07D0 /* MyAccountModuleAssembler.swift in Sources */,
 				5073547A2255FD1000998237 /* ApiDataProvider.swift in Sources */,
+				B64C9AA6230AEF5600CB07D0 /* MyAccountViewController.swift in Sources */,
 				507354A12255FD1000998237 /* AppearanceType.swift in Sources */,
 				5073547C2255FD1000998237 /* AccountRepositoryType.swift in Sources */,
 				5073549B2255FD1000998237 /* TextViewAppearanceType.swift in Sources */,
@@ -1118,18 +1367,25 @@
 				507354A02255FD1000998237 /* ViewAppearanceType.swift in Sources */,
 				B650B9DC2302B7EA00CB1C99 /* UserDataModel.swift in Sources */,
 				507354882255FD1000998237 /* CellTableViewSource.swift in Sources */,
+				B694CCE42305460B005CE0F7 /* AccountPagePresenter.swift in Sources */,
 				507354B22255FD1100998237 /* LightTableViewAppearance.swift in Sources */,
+				B65574B92306CFED00803BCA /* ListBastardViewRouter.swift in Sources */,
+				B650BA17230313B600CB1C99 /* ValidatorFieldData.swift in Sources */,
+				B64C9AA5230AEF5600CB07D0 /* MyAccountRouter.swift in Sources */,
 				507354C12255FD1100998237 /* Environment.swift in Sources */,
+				B65574B82306CFED00803BCA /* ListBastardViewModuleAssembler.swift in Sources */,
 				507354A42255FD1000998237 /* ComponentsAppearanceType.swift in Sources */,
 				507354832255FD1000998237 /* SttRouterType.swift in Sources */,
 				5073549F2255FD1000998237 /* SearchBarAppearanceType.swift in Sources */,
-				B64D4D2722FDA57F0001FCB2 /* ValidationFieldType.swift in Sources */,
 				5073547E2255FD1000998237 /* TokenApiModel.swift in Sources */,
 				5073548F2255FD1000998237 /* StartPageViewController.swift in Sources */,
 				507354A52255FD1000998237 /* TableViewAppearanceType.swift in Sources */,
+				B64C9AA7230AEF5600CB07D0 /* MyAccountInteractorType.swift in Sources */,
+				B694CCE12305460B005CE0F7 /* AccountPageInteractorType.swift in Sources */,
 				507354922255FD1000998237 /* StartPageInteractorType.swift in Sources */,
 				5073547D2255FD1000998237 /* AccountRepository.swift in Sources */,
 				507354AA2255FD1000998237 /* LightViewAppearance.swift in Sources */,
+				B694CCDF2305460B005CE0F7 /* AccountPageRouter.swift in Sources */,
 				B650BA122302F28400CB1C99 /* TableViewRouterType.swift in Sources */,
 				507354AF2255FD1000998237 /* LightSliderAppearance.swift in Sources */,
 			);
@@ -1295,7 +1551,7 @@
 		};
 		507353EA2255FC7D00998237 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35613103FC2E83E3DE9D9A9B /* Pods-SSAnalytics.debug.xcconfig */;
+			baseConfigurationReference = E55D10DD5F4F003E3B6F3DA2 /* Pods-SSAnalytics.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -1315,7 +1571,7 @@
 		};
 		507353EB2255FC7D00998237 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 825B874B32B9E634203C9F4A /* Pods-SSAnalytics.release.xcconfig */;
+			baseConfigurationReference = 8CF66E01B349A2152E088B15 /* Pods-SSAnalytics.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -1335,7 +1591,7 @@
 		};
 		507353ED2255FC7D00998237 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9E9059AD76E7248C78862F3 /* Pods-SSAnalytics-SSAnalyticsTests.debug.xcconfig */;
+			baseConfigurationReference = 0348EFA5448D0554CE997C14 /* Pods-SSAnalytics-SSAnalyticsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1357,7 +1613,7 @@
 		};
 		507353EE2255FC7D00998237 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35D6700BEED904763348C3E0 /* Pods-SSAnalytics-SSAnalyticsTests.release.xcconfig */;
+			baseConfigurationReference = 417E45497DF276E3103ADC5F /* Pods-SSAnalytics-SSAnalyticsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1442,7 +1698,7 @@
 		};
 		507354C82255FDC100998237 /* Debug UAT */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95A5DB101EE7D3E242F75121 /* Pods-SSAnalytics.debug uat.xcconfig */;
+			baseConfigurationReference = F8E6FFA69D70E0C4BB629E34 /* Pods-SSAnalytics.debug uat.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -1462,7 +1718,7 @@
 		};
 		507354C92255FDC100998237 /* Debug UAT */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 147DF5795EFCB45B30ACE70C /* Pods-SSAnalytics-SSAnalyticsTests.debug uat.xcconfig */;
+			baseConfigurationReference = E5030F5E4E674137FAF8DF12 /* Pods-SSAnalytics-SSAnalyticsTests.debug uat.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1541,7 +1797,7 @@
 		};
 		507354CB2255FDD100998237 /* Release UAT */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43E1A728BF71DCCEC409CAD8 /* Pods-SSAnalytics.release uat.xcconfig */;
+			baseConfigurationReference = 05E111FC241401760725CE89 /* Pods-SSAnalytics.release uat.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -1561,7 +1817,7 @@
 		};
 		507354CC2255FDD100998237 /* Release UAT */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32559E3257F9E67C147B5881 /* Pods-SSAnalytics-SSAnalyticsTests.release uat.xcconfig */;
+			baseConfigurationReference = EE50221F20872FB50D6464EB /* Pods-SSAnalytics-SSAnalyticsTests.release uat.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

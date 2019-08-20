@@ -9,5 +9,5 @@
 import Foundation
 
 protocol CellTableViewCellDelegate: AnyObject {
-    
+    func onCellTap(id: String)
 }

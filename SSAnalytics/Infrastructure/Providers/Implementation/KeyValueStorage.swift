@@ -12,5 +12,4 @@ import STT
 final class KeyValueStorage: KeyValueStorageType {
     
      lazy var token: SttStorage<TokenApiModel> = SttStorage<TokenApiModel>(type: .security, key: Constants.tokenKey)
-     lazy var users: SttStorage<UsersWayModel> = SttStorage<UsersWayModel>(type: .userAccount, key: Constants.tokenKey)
 }

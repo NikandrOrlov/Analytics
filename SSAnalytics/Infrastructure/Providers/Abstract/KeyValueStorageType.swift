@@ -12,5 +12,4 @@ import STT
 protocol KeyValueStorageType {
     
     var token: SttStorage<TokenApiModel> { get }
-    var users: SttStorage<UsersWayModel> { get }
 }

@@ -29,7 +29,11 @@ final class ApplicationAssembly {
         SharedAsembly(),
         
         StartPageModuleAssembler(),
-        TableViewModuleAssembler()
+        TableViewModuleAssembler(),
+        AccountPageModuleAssembler(),
+        ListBastardViewModuleAssembler(),
+        MyAccountModuleAssembler()
+        
         // There are other ModuleAssembler
         ])
     
