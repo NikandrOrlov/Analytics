@@ -19,7 +19,7 @@ final class ListBastardViewPresenter: SttPresenterWithParametr<ListBastardViewVi
     let myImage = Dynamic<Image>(Image(url: ""))
     let myName = Dynamic<String>("")
     
-    var Id = Dynamic<String>("")
+    let Id = Dynamic<String>("")
     
     let log = SignInApiModel(email: "", password: "")
     
@@ -48,7 +48,7 @@ final class ListBastardViewPresenter: SttPresenterWithParametr<ListBastardViewVi
     }
     
     func setUserValue() {
-        _interactor.getMyAccount(userid: Id.value).subscribe(onNext: { value in
+        _interactor.getMyAccount(userid: Id.value).subscribe(onNext: { [unowned self] value in
             let data = value.data
             self.myImage.value = Image(url: "https://prodssanalytics.blob.core.windows.net\(data.avatarUrl ?? "")")
             self.myName.value = data.firstName

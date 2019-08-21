@@ -33,4 +33,5 @@ final class AccountRepository: BaseRepository, AccountRepositoryType {
     func getMyAccount(userid: String) -> Observable<Wrapper> {
         return _apiDataProvider.getAccountData(userid: userId)
     }
+    
 }

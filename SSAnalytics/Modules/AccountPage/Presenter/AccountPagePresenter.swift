@@ -16,12 +16,12 @@ final class AccountPagePresenter: SttPresenterWithParametr<AccountPageViewDelega
     
     private(set) lazy var accountData = SttCommand(delegate: self, handler: { $0.interactFunc() })
     
-    var accountImage = Dynamic<Image>(Image(url: ""))
-    var accountName = Dynamic<String?>("")
-    var accountRole = Dynamic<String?>("")
-    var accountEmail = Dynamic<String?>("")
-    var accountPhone = Dynamic<String?>("")
-    let accountId = Dynamic<String>("")
+    let accountImage = Dynamic(Image(url: "https://prodssanalytics.blob.core.windows.net"))
+    let accountName = Dynamic("")
+    let accountRole = Dynamic<String?>("")
+    let accountEmail = Dynamic("")
+    let accountPhone = Dynamic("")
+    let accountId = Dynamic("")
     
     init(view: SttViewable, notificationService: SttNotificationErrorServiceType, router: AccountPageRouterType,
          interactor: AccountPageInteractorType) {
@@ -44,7 +44,7 @@ final class AccountPagePresenter: SttPresenterWithParametr<AccountPageViewDelega
     }
     
     private func interactFunc() {
-        _interactor.getAccountData(userid: accountId.value).subscribe(onNext: { value in
+        _interactor.getAccountData(userid: accountId.value).subscribe(onNext: { [unowned self] value in
             let data = value.data
             self.accountImage.value = Image(url: "https://prodssanalytics.blob.core.windows.net\(data.avatarUrl ?? "")")
             self.accountName.value = data.firstName

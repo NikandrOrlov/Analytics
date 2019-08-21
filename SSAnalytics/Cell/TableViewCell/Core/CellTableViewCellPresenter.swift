@@ -15,19 +15,21 @@ final class CellTableViewCellPresenter: SttPresenter<CellTableViewCellViewDelega
     
     weak var parent: CellTableViewCellDelegate!
     
-    var userImage: Dynamic<Image>
-    var userName: Dynamic<String>
-    var userRole: Dynamic<String>
-    var userId: Dynamic<String>
+    let userImage = Dynamic<Image>(Image(url: "https://prodssanalytics.blob.core.windows.net"))
+    let userName = Dynamic<String>("")
+    let userRole = Dynamic<String>("")
+    let userId = Dynamic<String>("")
     
     private(set) lazy var cellTap = SttCommand(delegate: self, handler: { $0.onCellTap() })
     
-    init(data: UserDataModel) {
+    init(image: Image, name: String, role: String, id: String, parent: CellTableViewCellDelegate) {
         
-        userImage = Dynamic(Image(url: "https://prodssanalytics.blob.core.windows.net\(data.avatarUrl ?? "")"))
-        userName = Dynamic((data.firstName))
-        userRole = Dynamic(data.roles!.joined(separator: " "))
-        userId = Dynamic(data.id)
+        self.parent = parent
+        
+        userImage.value = image
+        userName.value = name
+        userRole.value = role
+        userId.value = id
         
         super.init(notificationError: nil)
     }

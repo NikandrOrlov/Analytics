@@ -16,8 +16,7 @@ final class TableViewPresenter: SttPresenter<TableViewViewDelegate> {
     private let _interactor: TableViewInteractorType
     
     let collection = SttObservableCollection<CellTableViewCellPresenter>()
-    
-    let cm = Dynamic<SttHanlderSearchBar>.self
+
     let input = Dynamic("")
     
     private(set) lazy var getUserCommand = SttComandWithParametr(delegate: self, handler: { $0.getUsersCollection(input: $1) })
@@ -32,22 +31,22 @@ final class TableViewPresenter: SttPresenter<TableViewViewDelegate> {
         super.injectView(delegate: view)
     }
     
-    var firstStart = true
+    private var firstStart = true
+    
     override func viewAppearing() {
         super.viewAppearing()
         
         guard firstStart else { return }
         firstStart = false
         
-        input.addListener({ value in
-            self.getUserCommand.execute(parametr: value)
+        input.addListener({ [weak self] value in
+            self!.getUserCommand.execute(parametr: value)
         })
         getUserCommand.execute(parametr: "")
     }
     
     func getUsersCollection(input: String) {
-        _interactor.getUsers(input: input).subscribe(onNext: { data in
-            data.forEach({ $0.parent = self })
+        _interactor.getUsers(input: input, parent: self).subscribe(onNext: { [unowned self] data in
             self.collection.removeAll()
             self.collection.append(contentsOf: data)
         }).disposed(by: disposableBag)

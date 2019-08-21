@@ -20,9 +20,9 @@ final class TableViewInteractor: TableViewInteractorType {
         _notificationErrorService = notificationErrorService
     }
     
-    func getUsers(input: String) -> Observable<[CellTableViewCellPresenter]> {
+    func getUsers(input: String, parent: CellTableViewCellDelegate) -> Observable<[CellTableViewCellPresenter]> {
         return _accountRepository.getUsers(input: input)
-            .map({ $0.map( {CellTableViewCellPresenter(data: $0) })})
+            .map({ $0.convertUsers(parent: parent) })
             .useError(service: _notificationErrorService)
     }
     

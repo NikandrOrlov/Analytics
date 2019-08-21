@@ -100,6 +100,7 @@
 		B64C9AA8230AEF5600CB07D0 /* MyAccountRouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64C9AA0230AEF5600CB07D0 /* MyAccountRouterType.swift */; };
 		B64C9AA9230AEF5600CB07D0 /* MyAccountInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64C9AA1230AEF5600CB07D0 /* MyAccountInteractor.swift */; };
 		B64C9AAA230AEF5600CB07D0 /* MyAccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64C9AA2230AEF5600CB07D0 /* MyAccountPresenter.swift */; };
+		B64CDD8A230C30050080F304 /* SearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CDD89230C30040080F304 /* SearchBarDelegate.swift */; };
 		B64D4D2B22FDA6650001FCB2 /* ValidatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64D4D2A22FDA6650001FCB2 /* ValidatorType.swift */; };
 		B64D4D2D22FDA67C0001FCB2 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64D4D2C22FDA67C0001FCB2 /* Validator.swift */; };
 		B650B9DC2302B7EA00CB1C99 /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B650B9DB2302B7EA00CB1C99 /* UserDataModel.swift */; };
@@ -113,6 +114,7 @@
 		B650BA122302F28400CB1C99 /* TableViewRouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B650BA0A2302F28400CB1C99 /* TableViewRouterType.swift */; };
 		B650BA17230313B600CB1C99 /* ValidatorFieldData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B650BA15230313B600CB1C99 /* ValidatorFieldData.swift */; };
 		B650BA18230313B600CB1C99 /* ValidationFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B650BA16230313B600CB1C99 /* ValidationFieldType.swift */; };
+		B6517407230D28C200FED0D8 /* UserDataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6517406230D28C200FED0D8 /* UserDataExtension.swift */; };
 		B653C3F522F9A607002A8A75 /* UITextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = B653C3F422F9A607002A8A75 /* UITextFields.swift */; };
 		B65574B72306CFED00803BCA /* ListBastardViewViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65574AF2306CFED00803BCA /* ListBastardViewViewDelegate.swift */; };
 		B65574B82306CFED00803BCA /* ListBastardViewModuleAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65574B02306CFED00803BCA /* ListBastardViewModuleAssembler.swift */; };
@@ -250,6 +252,7 @@
 		B64C9AA0230AEF5600CB07D0 /* MyAccountRouterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountRouterType.swift; sourceTree = "<group>"; };
 		B64C9AA1230AEF5600CB07D0 /* MyAccountInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountInteractor.swift; sourceTree = "<group>"; };
 		B64C9AA2230AEF5600CB07D0 /* MyAccountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountPresenter.swift; sourceTree = "<group>"; };
+		B64CDD89230C30040080F304 /* SearchBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarDelegate.swift; sourceTree = "<group>"; };
 		B64D4D2A22FDA6650001FCB2 /* ValidatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorType.swift; sourceTree = "<group>"; };
 		B64D4D2C22FDA67C0001FCB2 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		B650B9DB2302B7EA00CB1C99 /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
@@ -263,6 +266,7 @@
 		B650BA0A2302F28400CB1C99 /* TableViewRouterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewRouterType.swift; sourceTree = "<group>"; };
 		B650BA15230313B600CB1C99 /* ValidatorFieldData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorFieldData.swift; sourceTree = "<group>"; };
 		B650BA16230313B600CB1C99 /* ValidationFieldType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationFieldType.swift; sourceTree = "<group>"; };
+		B6517406230D28C200FED0D8 /* UserDataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataExtension.swift; sourceTree = "<group>"; };
 		B653C3F422F9A607002A8A75 /* UITextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFields.swift; sourceTree = "<group>"; };
 		B65574AF2306CFED00803BCA /* ListBastardViewViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBastardViewViewDelegate.swift; sourceTree = "<group>"; };
 		B65574B02306CFED00803BCA /* ListBastardViewModuleAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBastardViewModuleAssembler.swift; sourceTree = "<group>"; };
@@ -549,6 +553,7 @@
 			isa = PBXGroup;
 			children = (
 				5073541C2255FD1000998237 /* StartPageViewControllerExtension.swift */,
+				B6517406230D28C200FED0D8 /* UserDataExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -938,6 +943,7 @@
 			children = (
 				B650B9F32302ED7E00CB1C99 /* TableViewViewController.swift */,
 				B650B9F02302ED7E00CB1C99 /* TableViewViewDelegate.swift */,
+				B64CDD89230C30040080F304 /* SearchBarDelegate.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1375,6 +1381,7 @@
 				507354C12255FD1100998237 /* Environment.swift in Sources */,
 				B65574B82306CFED00803BCA /* ListBastardViewModuleAssembler.swift in Sources */,
 				507354A42255FD1000998237 /* ComponentsAppearanceType.swift in Sources */,
+				B64CDD8A230C30050080F304 /* SearchBarDelegate.swift in Sources */,
 				507354832255FD1000998237 /* SttRouterType.swift in Sources */,
 				5073549F2255FD1000998237 /* SearchBarAppearanceType.swift in Sources */,
 				5073547E2255FD1000998237 /* TokenApiModel.swift in Sources */,
@@ -1384,6 +1391,7 @@
 				B694CCE12305460B005CE0F7 /* AccountPageInteractorType.swift in Sources */,
 				507354922255FD1000998237 /* StartPageInteractorType.swift in Sources */,
 				5073547D2255FD1000998237 /* AccountRepository.swift in Sources */,
+				B6517407230D28C200FED0D8 /* UserDataExtension.swift in Sources */,
 				507354AA2255FD1000998237 /* LightViewAppearance.swift in Sources */,
 				B694CCDF2305460B005CE0F7 /* AccountPageRouter.swift in Sources */,
 				B650BA122302F28400CB1C99 /* TableViewRouterType.swift in Sources */,

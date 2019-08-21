@@ -30,8 +30,6 @@ class MyAccountViewController: SttViewController<MyAccountPresenter>, MyAccountV
         myImage.contentMode = .scaleAspectFill
         myImage.layer.masksToBounds = true
     }
-
-    var set: SttBindingSet<MyAccountViewController>!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
@@ -39,8 +37,9 @@ class MyAccountViewController: SttViewController<MyAccountPresenter>, MyAccountV
         myImage.placeholderType = .avatar
     }
     
+    var set: SttBindingSet<MyAccountViewController>!
     override func bind() {
-        
+        super.bind()
         set = SttBindingSet(parent: self)
         
         set.bind(myImage).to(presenter.image)

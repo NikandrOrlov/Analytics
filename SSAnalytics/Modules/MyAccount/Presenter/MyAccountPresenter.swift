@@ -17,12 +17,12 @@ final class MyAccountPresenter: SttPresenterWithParametr<MyAccountViewDelegate, 
     
     private(set) lazy var accountSetCommand = SttCommand(delegate: self, handler: { $0.accountSet()})
     
-    var Id = Dynamic<String>("")
-    var image = Dynamic<Image>(Image(url: "noUserAvatar"))
-    var name = Dynamic<String>("")
-    var role = Dynamic<String?>("")
-    var email = Dynamic<String>("")
-    var phone = Dynamic<String>("")
+    let Id = Dynamic<String>("")
+    let image = Dynamic<Image>(Image(url: "noUserAvatar"))
+    let name = Dynamic<String>("")
+    let role = Dynamic<String?>("")
+    let email = Dynamic<String>("")
+    let phone = Dynamic<String>("")
     
     init(view: SttViewable, notificationService: SttNotificationErrorServiceType, router: MyAccountRouterType,
          interactor: MyAccountInteractorType) {
@@ -43,7 +43,7 @@ final class MyAccountPresenter: SttPresenterWithParametr<MyAccountViewDelegate, 
     }
 
     func accountSet() {
-        _interactor.getMyAccount(userid: Id.value).subscribe(onNext: { value in
+        _interactor.getMyAccount(userid: Id.value).subscribe(onNext: { [unowned self] value in
             let data = value.data
             self.image.value = Image(url: "https://prodssanalytics.blob.core.windows.net\(data.avatarUrl ?? "")")
             self.name.value = data.firstName

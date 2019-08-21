@@ -32,13 +32,11 @@ final class StartPagePresenter: SttPresenter<StartPageViewDelegate> {
         super.init(notificationError: notificationService)
         super.injectView(delegate: view)
         
-        email.rawValue.addListener({ [weak self] _ in
-            guard let `self` = self else { return }
-            self.email.rawValidator.validate(object: self.email.rawValue.value)
+        email.rawValue.addListener({ [weak self] value in
+            self?.email.rawValidator.validate(object: value)
         })
-        password.rawValue.addListener({ [weak self] _ in
-            guard let `self` = self else {return}
-            self.password.rawValidator.validate(object: self.password.rawValue.value)
+        password.rawValue.addListener({ [weak self] value in
+            self?.password.rawValidator.validate(object: value)
         })
     }
     
@@ -60,7 +58,7 @@ final class StartPagePresenter: SttPresenter<StartPageViewDelegate> {
     private func setFunc() {
         _interactor.signIn(email: email.rawValue.value!, password: password.rawValue.value!)
             .useWork(setData)
-            .subscribe(onNext: { _ in
+            .subscribe(onNext: { [unowned self] _ in
                 print("Test")
                  self._router.navigateWithId(storyboard: Storyboard.application, to: "start", typeNavigation: .modality)
             }).disposed(by: disposableBag)
