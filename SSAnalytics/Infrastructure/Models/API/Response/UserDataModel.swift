@@ -16,6 +16,7 @@ struct Wrapper: Decodable {
 struct UserDataModel: Decodable {
     let id: String
     let firstName: String
+    let lastName: String
     let roles: [String]?
     let avatarUrl: String?
     let email: String

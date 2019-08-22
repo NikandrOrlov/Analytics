@@ -10,5 +10,5 @@ import Foundation
 import STT
 
 protocol TableViewViewDelegate: SttViewControlable {
-    
+    func updateCellHeight()
 }

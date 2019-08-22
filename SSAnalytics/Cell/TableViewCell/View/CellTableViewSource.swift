@@ -18,8 +18,4 @@ final class CellTableViewSource: SttTableViewSource<CellTableViewCellPresenter> 
                   cellIdentifiers: [SttIdentifiers(identifers: CellTableViewCell.reusableIdentifier)],
                   collection: collection)
     }
-    
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 75
-    }
 }

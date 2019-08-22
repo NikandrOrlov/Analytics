@@ -26,6 +26,7 @@ final class ListBastardViewPresenter: SttPresenterWithParametr<ListBastardViewVi
     private(set) lazy var logOutCommand = SttCommand(delegate: self, handler: { $0.logOut() })
     private(set) lazy var openAccountCommand = SttCommand(delegate: self, handler: { $0.openMyAccount() })
     private(set) lazy var setUserValueCommand = SttCommand(delegate: self, handler: { $0.setUserValue() })
+    private(set) lazy var openWorkLogCommand = SttCommand(delegate: self, handler: { $0.openWorkLog() })
     
     init(view: SttViewable, notificationService: SttNotificationErrorServiceType, router: ListBastardViewRouterType,
          interactor: ListBastardViewInteractorType) {
@@ -51,7 +52,7 @@ final class ListBastardViewPresenter: SttPresenterWithParametr<ListBastardViewVi
         _interactor.getMyAccount(userid: Id.value).subscribe(onNext: { [unowned self] value in
             let data = value.data
             self.myImage.value = Image(url: "https://prodssanalytics.blob.core.windows.net\(data.avatarUrl ?? "")")
-            self.myName.value = data.firstName
+            self.myName.value = data.firstName + " " + data.lastName
         }).disposed(by: disposableBag)
     }
     
@@ -62,5 +63,9 @@ final class ListBastardViewPresenter: SttPresenterWithParametr<ListBastardViewVi
     
     func openMyAccount() {
         _router.navigateWithId(storyboard: Storyboard.application, to: "myAccount")
+    }
+    
+    func openWorkLog() {
+        _router.navigateWithId(storyboard: Storyboard.application, to: "workLog")
     }
 }

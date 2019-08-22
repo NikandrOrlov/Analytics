@@ -17,6 +17,7 @@ class ListBastardViewViewController: SttViewController<ListBastardViewPresenter>
     
     @IBOutlet var myAccountView: UIView!
     
+    @IBOutlet var workLogButton: UIButton!
     @IBOutlet var logOutButton: UIButton!
     
 	override func viewDidLoad() {
@@ -42,6 +43,7 @@ class ListBastardViewViewController: SttViewController<ListBastardViewPresenter>
         
         set.bind(logOutButton.tap()).to(presenter.logOutCommand)
         set.bind(myAccountView.tap()).to(presenter.openAccountCommand)
+        set.bind(workLogButton.tap()).to(presenter.openWorkLogCommand)
         set.bind(myImage).to(presenter.myImage)
         set.bind(myName).to(presenter.myName)
         

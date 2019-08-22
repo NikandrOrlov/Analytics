@@ -143,6 +143,8 @@ public class SttRouter: SttRouterType {
             return .navigation(style: .push)
         case .modality:
             return .modal(style: (transition: UIModalTransitionStyle.coverVertical, presentation: UIModalPresentationStyle.popover))
+        default:
+            return .navigation(style: .push)
         }
     }  
     

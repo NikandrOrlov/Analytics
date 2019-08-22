@@ -16,7 +16,8 @@ final class TableViewPresenter: SttPresenter<TableViewViewDelegate> {
     private let _interactor: TableViewInteractorType
     
     let collection = SttObservableCollection<CellTableViewCellPresenter>()
-
+    let update = TableViewViewDelegate.self
+    
     let input = Dynamic("")
     
     private(set) lazy var getUserCommand = SttComandWithParametr(delegate: self, handler: { $0.getUsersCollection(input: $1) })
@@ -55,7 +56,11 @@ final class TableViewPresenter: SttPresenter<TableViewViewDelegate> {
 
 extension TableViewPresenter: CellTableViewCellDelegate {
     
-    func onCellTap(id: String) {
+    func changeHeightTap() {
+        delegate?.updateCellHeight()
+    }
+    
+    func onImageTap(id: String) {
         _router.navigateWithId(to: AccountPagePresenter.self, parametr: id)
     }
 }

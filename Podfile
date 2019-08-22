@@ -14,19 +14,19 @@ project 'SSAnalytics', {
 target 'SSAnalytics' do
 
   target 'SSAnalyticsTests' do
-    pod 'RxTest', '~> 4.0'
-    pod 'RxBlocking', '~> 4.0'
+    pod 'RxTest'
+    pod 'RxBlocking'
     pod 'Cuckoo'
   end
 
   pod 'SideMenu'
-  pod 'STT'#, :path => '../../STT'
-  pod 'AlamofireNetworkActivityLogger', '~> 2.3'
-  pod 'SDWebImage', '~> 4.0'
+  pod 'STT', '~> 2.2.6' #, :path => '../../STT'
+  pod 'AlamofireNetworkActivityLogger'
+  pod 'SDWebImage', '~> 4.4.7'
   pod 'Swinject'
   pod 'SwinjectStoryboard'
-  pod 'LightRoute', :git => 'https://github.com/SpectralDragon/LightRoute.git', :tag => '2.1.20'
   pod 'AppCenter'
+  pod 'LightRoute', :git => 'https://github.com/SpectralDragon/LightRoute.git', :tag => '2.1.20'
 #  pod 'RxRealm'
 #  pod 'RealmSwift'
   pod 'SINQ'

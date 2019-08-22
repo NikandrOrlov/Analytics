@@ -13,8 +13,11 @@ extension UserDataModel {
         return CellTableViewCellPresenter(
             image: Image(url: "https://prodssanalytics.blob.core.windows.net\(self.avatarUrl ?? "")"),
             name: self.firstName,
+            lastName: self.lastName,
             role: self.roles!.joined(separator: " "),
             id: self.id,
+            email: URL(string: self.email)!,
+            phone: URL(string: self.phoneNumber)! ,
             parent: parent
         )
     }

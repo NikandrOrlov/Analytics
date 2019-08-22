@@ -46,7 +46,7 @@ final class MyAccountPresenter: SttPresenterWithParametr<MyAccountViewDelegate, 
         _interactor.getMyAccount(userid: Id.value).subscribe(onNext: { [unowned self] value in
             let data = value.data
             self.image.value = Image(url: "https://prodssanalytics.blob.core.windows.net\(data.avatarUrl ?? "")")
-            self.name.value = data.firstName
+            self.name.value = data.firstName + "" + data.lastName
             self.role.value = data.roles?.joined(separator: " ")
             self.email.value = data.email
             self.phone.value = data.phoneNumber

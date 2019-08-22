@@ -25,11 +25,14 @@ class TableViewViewController: SttViewController<TableViewPresenter>, TableViewV
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.tableView.tableFooterView = UIView()
+        
         settings()
         setHandler()
 	}
     
     func settings() {
+        
         searchHandler = SttHanlderSearchBar()
         searchBar = UISearchBar(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 50))
         search.target = self
@@ -55,11 +58,10 @@ class TableViewViewController: SttViewController<TableViewPresenter>, TableViewV
     var set: SttBindingSet<TableViewViewController>!
     
     override func bind() {
-        
+        super.bind()
         set = SttBindingSet(parent: self)
         
         _source = CellTableViewSource(tableView: tableView, collection: presenter.collection)
-        
         
         set.apply()
     }
@@ -67,6 +69,11 @@ class TableViewViewController: SttViewController<TableViewPresenter>, TableViewV
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         presenter.input.value = searchText
     }
+    
+    func updateCellHeight() {
+        tableView.reloadData()
+    }
+    
     
 	// MARK: - implementation of TableViewViewDelegate
     //MARK: - implementation of SearchBarDelegate

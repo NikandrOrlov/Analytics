@@ -7,7 +7,9 @@
 //
 
 import Foundation
+import UIKit
 
 protocol CellTableViewCellDelegate: AnyObject {
-    func onCellTap(id: String)
+    func onImageTap(id: String)
+    func changeHeightTap()
 }
