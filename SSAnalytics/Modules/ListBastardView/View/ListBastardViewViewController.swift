@@ -28,6 +28,9 @@ class ListBastardViewViewController: SttViewController<ListBastardViewPresenter>
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(false)
         
+        myImage.createCircle()
+        myImage.contentMode = .scaleAspectFill
+        myImage.layer.masksToBounds = true
         myImage.image = UIImage(named: "noUserAvatar")
         myImage.placeholderType = .avatar
         

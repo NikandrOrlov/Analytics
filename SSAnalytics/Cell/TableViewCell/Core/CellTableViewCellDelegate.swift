@@ -11,5 +11,5 @@ import UIKit
 
 protocol CellTableViewCellDelegate: AnyObject {
     func onImageTap(id: String)
-    func changeHeightTap()
+    func changeHeightTap(id: String)
 }

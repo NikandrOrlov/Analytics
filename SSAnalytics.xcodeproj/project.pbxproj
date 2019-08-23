@@ -1802,8 +1802,9 @@
 			baseConfigurationReference = 21EAC8156BC2FB8622D2E21B /* Pods-SSAnalytics.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KRDU7P95V4;
 				INFOPLIST_FILE = "$(SRCROOT)/SSAnalytics/App_Start/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1822,8 +1823,9 @@
 			baseConfigurationReference = FA4F4639A2E1442046166DF1 /* Pods-SSAnalytics.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KRDU7P95V4;
 				INFOPLIST_FILE = "$(SRCROOT)/SSAnalytics/App_Start/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1843,8 +1845,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BRVZA5MVR6;
+				DEVELOPMENT_TEAM = KRDU7P95V4;
 				INFOPLIST_FILE = SSAnalyticsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1853,6 +1856,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.startupsoft.SSAnalyticsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSAnalytics.app/SSAnalytics";
@@ -1865,8 +1869,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BRVZA5MVR6;
+				DEVELOPMENT_TEAM = KRDU7P95V4;
 				INFOPLIST_FILE = SSAnalyticsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1875,6 +1880,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.startupsoft.SSAnalyticsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSAnalytics.app/SSAnalytics";
@@ -1949,8 +1955,9 @@
 			baseConfigurationReference = B87D9DD4A04FA0D0907662E6 /* Pods-SSAnalytics.debug uat.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KRDU7P95V4;
 				INFOPLIST_FILE = "$(SRCROOT)/SSAnalytics/App_Start/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1970,8 +1977,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BRVZA5MVR6;
+				DEVELOPMENT_TEAM = KRDU7P95V4;
 				INFOPLIST_FILE = SSAnalyticsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1980,6 +1988,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.startupsoft.SSAnalyticsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSAnalytics.app/SSAnalytics";
@@ -2048,8 +2057,9 @@
 			baseConfigurationReference = 80FD8508F28C5A478BC4862A /* Pods-SSAnalytics.release uat.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KRDU7P95V4;
 				INFOPLIST_FILE = "$(SRCROOT)/SSAnalytics/App_Start/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2069,8 +2079,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BRVZA5MVR6;
+				DEVELOPMENT_TEAM = KRDU7P95V4;
 				INFOPLIST_FILE = SSAnalyticsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2079,6 +2090,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.startupsoft.SSAnalyticsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSAnalytics.app/SSAnalytics";

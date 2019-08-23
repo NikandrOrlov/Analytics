@@ -15,11 +15,13 @@ final class CellTableViewCellPresenter: SttPresenter<CellTableViewCellViewDelega
     
     weak var parent: CellTableViewCellDelegate!
     
+    let collection = SttObservableCollection<CellTableViewCellPresenter>()
+    
     let userImage = Dynamic<Image>(Image(url: "https://prodssanalytics.blob.core.windows.net"))
     let userName = Dynamic<String>("")
     let userRole = Dynamic<String>("")
     let userId = Dynamic<String>("")
-    let userEmail = Dynamic(URL(string: "telprompt://123456789"))
+    let userEmail = Dynamic(URL(string: "telprompt://123456789")!)
     let userPhone = Dynamic(URL(string: "mailto://jaroslav.hanushchak@startupsoft.us")!)
     
     let boller = Dynamic<Bool>(true)
@@ -37,7 +39,7 @@ final class CellTableViewCellPresenter: SttPresenter<CellTableViewCellViewDelega
         userName.value = name + " " + lastName
         userRole.value = role
         userId.value = id
-        userEmail.value = URL(string: "mailto://\(email)")
+        userEmail.value = URL(string: "mailto://\(email)")!
         userPhone.value = URL(string: "telprompt://\(phone)")!
         
         super.init(notificationError: nil)
@@ -48,15 +50,7 @@ final class CellTableViewCellPresenter: SttPresenter<CellTableViewCellViewDelega
     }
     
     private func onCellTab() {
-        if boller.value == true
-        {
-            boller.value = false
-        }
-        else if boller.value == false
-        {
-            boller.value = true
-        }
-        parent.changeHeightTap()
+        parent.changeHeightTap(id: userId.value)
     }
     
     private func onPhoneTap() {
@@ -64,7 +58,7 @@ final class CellTableViewCellPresenter: SttPresenter<CellTableViewCellViewDelega
     }
     
     private func onEmailTap() {
-        UIApplication.shared.open(userPhone.value)
+        UIApplication.shared.open(userEmail.value)
     }
     
 }

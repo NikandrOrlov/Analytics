@@ -21,6 +21,9 @@ class AccountPageViewController: SttViewController<AccountPagePresenter>, Accoun
     
     @IBOutlet var accountView: UIView!
     
+    @IBOutlet var emailImage: UIImageView!
+    @IBOutlet var callImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,8 +36,6 @@ class AccountPageViewController: SttViewController<AccountPagePresenter>, Accoun
         accountImage.layer.masksToBounds = true
         
         accoountRole.textColor = .lightGray
-        
-        accountView.setBorder(color: .lightGray, size: 2)
     }
 
     var set: SttBindingSet<AccountPageViewController>!
@@ -49,6 +50,8 @@ class AccountPageViewController: SttViewController<AccountPagePresenter>, Accoun
         set.bind(accoountRole).to(presenter.accountRole)
         set.bind(accountEmail).to(presenter.accountEmail)
         set.bind(accountPhone).to(presenter.accountPhone)
+        set.bind(emailImage.tap()).to(presenter.emailTapCommand)
+        set.bind(callImage.tap()).to(presenter.phoneTapCommand)
         
         set.apply()
     }

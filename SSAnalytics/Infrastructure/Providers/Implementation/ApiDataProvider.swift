@@ -8,6 +8,7 @@
 
 import Foundation
 import RxSwift
+import Alamofire
 import STT
 
 final class ApiDataProvider: ApiDataProviderType {
@@ -24,7 +25,7 @@ final class ApiDataProvider: ApiDataProviderType {
     func signIn(data: SignInApiModel) -> Observable<TokenApiModel> {
         return _httpService.post(controller: ApiConroller.token, data: ["username": data.email,
                                                                         "grant_type": "password",
-                                                                        "password": data.password])
+                                                                        "password": data.password], encoding: URLEncoding.httpBody)
             .getResult()
     }
     

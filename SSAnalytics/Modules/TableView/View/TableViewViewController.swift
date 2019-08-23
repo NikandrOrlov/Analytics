@@ -12,6 +12,8 @@ import STT
 
 class TableViewViewController: SttViewController<TableViewPresenter>, TableViewViewDelegate, SearchBarDelegate {
     
+    @IBOutlet var listBastard: UIBarButtonItem!
+    
     @IBOutlet var tableView: UITableView!
     
     @IBOutlet var search: UIBarButtonItem!
@@ -34,7 +36,9 @@ class TableViewViewController: SttViewController<TableViewPresenter>, TableViewV
     func settings() {
         
         searchHandler = SttHanlderSearchBar()
+        navigationItem.leftBarButtonItem = listBastard
         searchBar = UISearchBar(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 50))
+        searchBar.showsCancelButton = true
         search.target = self
         search.action = #selector(didNavItemTap(_:))
         searchBar.delegate = self
@@ -50,9 +54,9 @@ class TableViewViewController: SttViewController<TableViewPresenter>, TableViewV
     }
     
     @IBAction func didNavItemTap(_ sender: AnyObject) {
-       _ = tableView.tableHeaderView = searchBar
-        searchBar.delegate = self
-        
+//       _ = navigationItem.titleView = searchBar
+        navigationItem.leftBarButtonItem?.customView = searchBar
+//        searchBar.delegate = self
     }
     
     var set: SttBindingSet<TableViewViewController>!
@@ -66,12 +70,17 @@ class TableViewViewController: SttViewController<TableViewPresenter>, TableViewV
         set.apply()
     }
     
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        navigationItem.leftBarButtonItem?.customView = nil
+    }
+    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         presenter.input.value = searchText
     }
     
-    func updateCellHeight() {
-        tableView.reloadData()
+    func updateCellHeight(index: Int) {
+        let indexPath = IndexPath(row: index, section: 0)
+        tableView.reloadRows(at: [indexPath], with: .none)
     }
     
     

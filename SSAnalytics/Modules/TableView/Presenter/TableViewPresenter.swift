@@ -56,8 +56,22 @@ final class TableViewPresenter: SttPresenter<TableViewViewDelegate> {
 
 extension TableViewPresenter: CellTableViewCellDelegate {
     
-    func changeHeightTap() {
-        delegate?.updateCellHeight()
+    
+    func changeHeightTap(id: String) {
+        guard let cell = collection.first(where: { $0.userId.value == id }) else { return }
+        guard let cellIndex = collection.firstIndex(where: { $0.userId.value == id }) else { return }
+        
+        if cell.boller.value {
+            collection.forEach({
+                $0.boller.value = true
+            })
+            cell.boller.value = false
+        }
+        else if !cell.boller.value
+        {
+           cell.boller.value = true
+        }
+        delegate?.updateCellHeight(index: cellIndex)
     }
     
     func onImageTap(id: String) {

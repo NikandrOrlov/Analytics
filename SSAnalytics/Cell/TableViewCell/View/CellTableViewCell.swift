@@ -25,8 +25,6 @@ class CellTableViewCell: SttTableViewCell<CellTableViewCellPresenter>, CellTable
     
     static let reusableIdentifier = "CellTableViewCell"
     
-    var set: SttBindingSet<CellTableViewCell>!
-    
 	override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -40,6 +38,8 @@ class CellTableViewCell: SttTableViewCell<CellTableViewCellPresenter>, CellTable
         userImageView.layer.masksToBounds = true
     }
     
+    var set: SttBindingSet<CellTableViewCell>!
+    
 	override func prepareBind() {
         super.prepareBind()
         
@@ -50,7 +50,9 @@ class CellTableViewCell: SttTableViewCell<CellTableViewCellPresenter>, CellTable
         set.bind(contentLabel).to(presenter.userRole)
         set.bind(userImageView.tap()).to(presenter.imageTapCommand)
         set.bind(userIcon.tap()).to(presenter.imageTapCommand)
+        
         set.bind(Bool.self).forProperty( {$0.iconsView.isHidden = $1 }).to(presenter.boller)
+        
         set.bind(userView.tap()).to(presenter.cellTapCommand)
         set.bind(callIcon.tap()).to(presenter.phoneTapCommand)
         set.bind(messageIcon.tap()).to(presenter.emailTapCommand)

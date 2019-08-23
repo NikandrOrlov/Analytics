@@ -14,14 +14,19 @@ final class AccountPagePresenter: SttPresenterWithParametr<AccountPageViewDelega
     private let _router: AccountPageRouterType
     private let _interactor: AccountPageInteractorType
     
-    private(set) lazy var accountData = SttCommand(delegate: self, handler: { $0.interactFunc() })
-    
     let accountImage = Dynamic(Image(url: "https://prodssanalytics.blob.core.windows.net"))
     let accountName = Dynamic("")
     let accountRole = Dynamic<String?>("")
     let accountEmail = Dynamic("")
     let accountPhone = Dynamic("")
     let accountId = Dynamic("")
+    
+    let phoneIcon = Dynamic(URL(string: "telprompt://123456789")!)
+    let emailIcon = Dynamic(URL(string: "mailto://jaroslav.hanushchak@startupsoft.us")!)
+    
+    private(set) lazy var accountData = SttCommand(delegate: self, handler: { $0.interactFunc() })
+    private(set) lazy var emailTapCommand = SttCommand(delegate: self, handler: { $0.onEmailTap() })
+    private(set) lazy var phoneTapCommand = SttCommand(delegate: self, handler: { $0.onPhoneTap() })
     
     init(view: SttViewable, notificationService: SttNotificationErrorServiceType, router: AccountPageRouterType,
          interactor: AccountPageInteractorType) {
@@ -51,7 +56,18 @@ final class AccountPagePresenter: SttPresenterWithParametr<AccountPageViewDelega
             self.accountRole.value = data.roles?.joined(separator: " ")
             self.accountEmail.value = data.email
             self.accountPhone.value = data.phoneNumber
+            
+            self.emailIcon.value = URL(string: "mailto://\(data.email)")!
+            self.phoneIcon.value = URL(string: "telprompt://\(data.phoneNumber)")!
             print("HERMANELIG")
         }).disposed(by: disposableBag)
+    }
+    
+    private func onEmailTap() {
+        UIApplication.shared.open(emailIcon.value)
+    }
+    
+    private func onPhoneTap() {
+        UIApplication.shared.open(phoneIcon.value)
     }
 }

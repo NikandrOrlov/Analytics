@@ -17,7 +17,7 @@ class MyAccountViewController: SttViewController<MyAccountPresenter>, MyAccountV
     @IBOutlet var myRole: UILabel!
     @IBOutlet var myEmail: UILabel!
     @IBOutlet var myPhone: UILabel!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,13 +33,13 @@ class MyAccountViewController: SttViewController<MyAccountPresenter>, MyAccountV
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        myImage.image = UIImage(named: "noUserAvatar")
         myImage.placeholderType = .avatar
     }
     
     var set: SttBindingSet<MyAccountViewController>!
     override func bind() {
         super.bind()
+        
         set = SttBindingSet(parent: self)
         
         set.bind(myImage).to(presenter.image)

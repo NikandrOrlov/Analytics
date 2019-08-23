@@ -8,7 +8,7 @@ enum PlaceholderType: Int {
     case none
     case avatar
     case usual
-
+    
     var name: String? {
         var imageName: String?
 
